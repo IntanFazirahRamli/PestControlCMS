@@ -1,0 +1,45 @@
+/* PestControl CMS - app.css
+   Tailwind CDN is loaded via App.razor <link>.
+   Add any custom overrides here. */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: #f9fafb;
+    color: #111827;
+    margin: 0;
+    padding: 0;
+}
+
+/* Smooth focus rings for accessibility */
+:focus-visible {
+    outline: 2px solid #10b981;
+    outline-offset: 2px;
+}
+
+/* Blazor validation error styling */
+.validation-message {
+    color: #ef4444;
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+}
+
+/* Blazor invalid field border */
+.invalid {
+    border-color: #ef4444 !important;
+}
+
+/* Table row hover */
+tbody tr:hover {
+    background-color: #f0fdf4;
+}
+
+/* Spinner keyframe (supplement Tailwind animate-spin) */
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
